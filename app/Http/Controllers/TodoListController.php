@@ -49,8 +49,7 @@ class TodoListController extends Controller
         $item->is_complete = $request->is_complete ? 1 : 0;
         $item->save();
 
-        // Example in TodoListController.php
-        return back()->with('success', 'Item created successfully!');
+        return back()->with('success', 'Item updated successfully!');
     }
 
     // Delete a Todo item
